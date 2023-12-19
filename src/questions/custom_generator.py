@@ -4,6 +4,7 @@ import random
 class DevelopCustomGenerator:
     """
     Task-1: Create simple interator without using generator
+    Task-2: Create simple generator
     """
 
     @staticmethod
