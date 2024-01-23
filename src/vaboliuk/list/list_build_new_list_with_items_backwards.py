@@ -10,6 +10,25 @@ class ListNewListWithItemsBackwards:
 
     _fruits = ["cherry", "mango", "banana", "kiwi", "apple", "grape"]
 
+    def list_backwards_list_slice_operator(self):
+        """
+        Task-1: Using list [::-1] slice operator
+        """
+        print("\nTask-1: list_backwards_list_slice_operator")
+        print(f"Input List: {self._fruits}")
+        reversed_list = self._fruits[::-1]
+        print(f"Output List: {reversed_list}")
+
+    def list_backwards_list_reverse(self):
+        """
+        Task-1: Using list reverse() function
+        """
+        print("\nTask-1: list_backwards_list_reverse")
+        print(f"Input List: {self._fruits}")
+        cloned_list = [i for i in self._fruits]
+        cloned_list.reverse()
+        print(f"Output List: {cloned_list}")
+
     def list_backwards_simple_loop(self):
         """
         Task-1: Using simple list
@@ -32,26 +51,10 @@ class ListNewListWithItemsBackwards:
         output_results = [self._fruits[len_fruits - 1 - i] for i in range(0, len_fruits)]
         print(f"Output List: {output_results}")
 
-    def list_backwards_list_reverse(self):
-        """
-        Task-1: Using list reverse() function
-        """
-        print("\nTask-1: list_backwards_list_reverse")
-        print(f"Input List: {self._fruits}")
-        cloned_list = [i for i in self._fruits]
-        cloned_list.reverse()
-        print(f"Output List: {cloned_list}")
-
-    def list_backwards_list_slice_operator(self):
-        """
-        Task-1: Using list [::-1] slice operator
-        """
-        print("\nTask-1: list_backwards_list_slice_operator")
-        print(f"Input List: {self._fruits}")
-        reversed_list = self._fruits[::-1]
-        print(f"Output List: {reversed_list}")
-
     def list_each_item_written_backwards(self):
+        """
+        Task-2: List with backwards items in it
+        """
         print("\nTask-2: list_each_item_written_backwards")
         print(f"Input List: {self._fruits}")
         output_list = [i[::-1] for i in self._fruits]
